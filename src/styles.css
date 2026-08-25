@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500&family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --purple: #8643dc;
+  --dark: #21232d;
+  --muted: #a8a0b0;
+  --line: #dad2e3;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+.desktop {
+  position: relative;
+  width: 100%;
+  min-height: 902px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.contact-me {
+  position: relative;
+  width: 1440px;
+  height: 902px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+}
+
+.background-blur {
+  position: absolute;
+  inset: 0;
+  width: 1440px;
+  height: 902px;
+  background: linear-gradient(
+    to bottom,
+    rgba(187, 133, 255, 0.17) 8.537%,
+    rgba(255, 244, 251, 0.20) 100%
+  );
+  filter: blur(75px);
+}
+
+.hero-copy {
+  position: absolute;
+  left: 165px;
+  top: 50px;
+  width: 512px;
+  height: 212px;
+}
+
+.contact-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--purple);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.label-line {
+  position: absolute;
+  left: 0;
+  top: 34px;
+  width: 50px;
+  height: 2px;
+  background: var(--purple);
+}
+
+h1 {
+  position: absolute;
+  left: 0;
+  top: 56px;
+  width: 512px;
+  margin: 0;
+  color: var(--dark);
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0;
+}
+
+.admin-email {
+  position: absolute;
+  left: 1052px;
+  top: 104px;
+  color: var(--purple);
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+
+.contact-form {
+  position: absolute;
+  left: 165px;
+  top: 312px;
+  width: 1110px;
+  height: 282px;
+  margin: 0;
+}
+
+.field {
+  position: absolute;
+  left: 0;
+  width: 1110px;
+  height: 44px;
+  margin: 0;
+}
+
+.field:nth-of-type(1) { top: 0; }
+.field:nth-of-type(2) { top: 89px; }
+.field:nth-of-type(3) { top: 178px; }
+
+.field input,
+.field textarea {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1110px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  resize: none;
+  background: transparent;
+  color: var(--dark);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+}
+
+.field span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1110px;
+  height: 1px;
+  background: var(--line);
+}
+
+.form-bottom {
+  position: absolute;
+  left: 0;
+  top: 252px;
+  width: 1110px;
+  height: 60px;
+}
+
+.quote {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 60px;
+  padding: 0;
+  border: 0;
+  border-radius: 100px;
+  background: var(--purple);
+  color: #fff;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.quote:disabled {
+  opacity: .7;
+  cursor: wait;
+}
+
+.send-tools {
+  position: absolute;
+  left: 1046px;
+  top: 0;
+  width: 64px;
+  height: 30px;
+}
+
+.attach-button,
+.send-button {
+  position: absolute;
+  top: 0;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.attach-button {
+  left: 0;
+  width: 18px;
+  height: 30px;
+  top: 6px;
+}
+
+.attach-button img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.send-button {
+  left: 34px;
+  width: 30px;
+  height: 30px;
+}
+
+.send-button img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.send-button:disabled {
+  opacity: .65;
+  cursor: wait;
+}
+
+.status {
+  position: absolute;
+  right: 0;
+  top: 317px;
+  min-height: 18px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 13px;
+  color: #716b7b;
+}
+
+.status.success { color: #6b36a9; }
+.status.error { color: #b64d5b; }
+
+.friends {
+  position: absolute;
+  left: 720px;
+  top: 724px;
+  transform: translateX(-50%);
+  margin: 0;
+  color: var(--dark);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.socials {
+  position: absolute;
+  left: 605px;
+  top: 802px;
+  width: 230px;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.social {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 40px;
+}
+
+.social:last-child { margin-right: 0; }
+
+.social-shape {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  transform: scaleY(-1);
+}
+
+.social-icon {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.decor-vector {
+  position: absolute;
+  left: 620px;
+  top: 817px;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+@media (max-width: 1439px) {
+  .contact-me {
+    transform-origin: top left;
+    transform: scale(calc((100vw) / 1440));
+  }
+
+  .desktop {
+    height: calc(902px * (100vw / 1440));
+  }
+}
+
+@media (max-width: 680px) {
+  .desktop {
+    min-height: 100vh;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .contact-me {
+    transform: none;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 32px 20px 40px;
+  }
+
+  .background-blur {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-copy {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-label,
+  .label-line,
+  h1,
+  .admin-email,
+  .contact-form,
+  .friends,
+  .socials,
+  .decor-vector {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+  }
+
+  .contact-label { display: inline-block; }
+  .label-line { margin-top: 12px; }
+  h1 {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .admin-email {
+    display: inline-block;
+    margin-top: 28px;
+    font-size: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+    height: 370px;
+    margin-top: 42px;
+  }
+
+  .field,
+  .field input,
+  .field textarea,
+  .field span {
+    width: 100%;
+  }
+
+  .field:nth-of-type(1) { top: 0; }
+  .field:nth-of-type(2) { top: 89px; }
+  .field:nth-of-type(3) { top: 178px; }
+
+  .form-bottom {
+    width: 100%;
+    top: 252px;
+  }
+
+  .send-tools {
+    left: auto;
+    right: 0;
+  }
+
+  .status { top: 325px; }
+
+  .friends {
+    display: block;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .socials {
+    width: 230px;
+    margin: 28px auto 0;
+  }
+
+  .decor-vector { display: none; }
+}
